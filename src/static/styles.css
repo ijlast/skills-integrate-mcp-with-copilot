@@ -28,6 +28,32 @@ header h1 {
   margin-bottom: 10px;
 }
 
+#teacher-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+#login-form {
+  width: min(100% - 32px, 360px);
+  margin: 16px auto 0;
+  padding: 16px;
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#login-form button + button {
+  margin-left: 8px;
+}
+
+#message {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +168,15 @@ section h3 {
 
 .form-group input,
 .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
